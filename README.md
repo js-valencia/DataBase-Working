@@ -5,6 +5,17 @@ Repositorio académico de la asignatura **Bases de Datos**, creado para organiza
 
 Aquí se recopilan actividades relacionadas con el modelado de datos, diagramas entidad-relación y otros contenidos estudiados en clase.
 
+## 👨‍💻 Información del estudiante
+
+| Dato | Información |
+|:---|:---|
+| **Nombre** | José Valencia |
+| **Semetre** | 3ro "A" |
+| **Universidad** | Universidad Nacional de Loja (UNL) |
+| **Carrera** | Ingeniería en Computación |
+| **Asignatura** | Bases de Datos |
+| **Repositorio** | DataBase-Working |
+
 ## 📚 Contenido
 
 - **Unidad 1:** ejercicios y actividades desarrollados durante las clases.
