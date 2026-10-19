@@ -10,7 +10,7 @@ Aquí se recopilan actividades relacionadas con el modelado de datos, diagramas 
 | Dato | Información |
 |:---|:---|
 | **Nombre** | José Valencia |
-| **Semetre** | 3ro "A" |
+| **Semestre** | 3ro "A" |
 | **Universidad** | Universidad Nacional de Loja (UNL) |
 | **Carrera** | Ingeniería en Computación |
 | **Asignatura** | Bases de Datos |
