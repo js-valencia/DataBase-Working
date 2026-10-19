@@ -1,108 +1,65 @@
 
-# 🗄️ Database Design & SQL
+# 🗄️ DataBase-Working
 
-Repositorio académico para recopilar, organizar y documentar los ejercicios desarrollados durante la asignatura de **Bases de Datos**.
+Repositorio académico de la asignatura **Bases de Datos**, creado para organizar y documentar los ejercicios realizados durante el semestre.
 
-Aquí se almacenan los diagramas, modelos de datos, scripts SQL, archivos editables y documentos de referencia elaborados en clase.
+Aquí se recopilan actividades relacionadas con el modelado de datos, diagramas entidad-relación y otros contenidos estudiados en clase.
 
 ## 📚 Contenido
 
-- [Unidad 1 — Fundamentos y modelado de datos](unit-01/README.md)
-- [Unidad 2 — Contenido por desarrollar](unit-02/README.md)
-- [Unidad 3 — Contenido por desarrollar](unit-03/README.md)
+- **Unidad 1:** ejercicios y actividades desarrollados durante las clases.
+- **Modelado de datos:** diagramas y representaciones de modelos de bases de datos.
+- **Material académico:** archivos y recursos utilizados para resolver los ejercicios.
 
-## 📊 Progreso de la asignatura
+## 📊 Progreso
 
-| Unidad | Ejercicios registrados | Estado |
+| Unidad | Ejercicios | Estado |
 |:---|:---:|:---|
-| Unidad 1 | 12 | En desarrollo |
-| Unidad 2 | 0 | Pendiente |
-| Unidad 3 | 0 | Pendiente |
+| Unidad 1 | 9 | En desarrollo |
+| Unidad 2 | — | Pendiente de organización |
+| Unidad 3 | — | Pendiente de organización |
 
 ## 📁 Estructura del repositorio
 
 ```text
-database-design-course/
+DataBase-Working/
 ├── README.md
-├── unit-01/
-│   ├── README.md
-│   └── exercises/
-│       ├── exercise-01/
-│       ├── exercise-02/
-│       ├── exercise-03/
-│       ├── exercise-04/
-│       ├── exercise-05/
-│       ├── exercise-06/
-│       ├── exercise-07/
-│       ├── exercise-08/
-│       ├── exercise-09/
-│       ├── exercise-10/
-│       ├── exercise-11/
-│       └── exercise-12/
-├── unit-02/
-│   └── README.md
-└── unit-03/
-    └── README.md
+└── unit-01/
+    └── exercises/
+        └── (9 ejercicios)
 ```
 
 ## 🧩 Unidad 1 — Ejercicios
 
-| N.º | Ejercicio | Acceso |
-|:---:|:---|:---|
-| 01 | Ejercicio 01 | [Ver archivos](unit-01/exercises/exercise-01/) |
-| 02 | Ejercicio 02 | [Ver archivos](unit-01/exercises/exercise-02/) |
-| 03 | Ejercicio 03 | [Ver archivos](unit-01/exercises/exercise-03/) |
-| 04 | Ejercicio 04 | [Ver archivos](unit-01/exercises/exercise-04/) |
-| 05 | Ejercicio 05 | [Ver archivos](unit-01/exercises/exercise-05/) |
-| 06 | Ejercicio 06 | [Ver archivos](unit-01/exercises/exercise-06/) |
-| 07 | Ejercicio 07 | [Ver archivos](unit-01/exercises/exercise-07/) |
-| 08 | Ejercicio 08 | [Ver archivos](unit-01/exercises/exercise-08/) |
-| 09 | Ejercicio 09 | [Ver archivos](unit-01/exercises/exercise-09/) |
-| 10 | Ejercicio 10 | [Ver archivos](unit-01/exercises/exercise-10/) |
-| 11 | Ejercicio 11 | [Ver archivos](unit-01/exercises/exercise-11/) |
-| 12 | Ejercicio 12 | [Ver archivos](unit-01/exercises/exercise-12/) |
+Los nueve ejercicios de esta unidad se encuentran organizados en la carpeta correspondiente.
 
-*Los nombres de los ejercicios se actualizarán según los temas y enunciados correspondientes.*
+📂 [**Explorar los ejercicios de la Unidad 1**](unit-01/exercises/)
 
-## 🛠️ Herramientas y tecnologías
+En esta sección se irán incorporando los archivos correspondientes a cada actividad, conservando su estructura y los recursos utilizados durante su desarrollo.
 
-- **Database Modeling:** diseño de modelos entidad-relación y modelos relacionales.
-- **SQL:** scripts y consultas desarrollados durante las clases.
-- **Diagramming Tools:** herramientas para crear y editar diagramas.
-- **Git & GitHub:** control de versiones y organización del material académico.
+## 🛠️ Herramientas y recursos
 
-## 📐 Organización de cada ejercicio
-
-Cuando corresponda, cada ejercicio podrá incluir:
-
-| Archivo | Descripción |
-|:---|:---|
-| `README.md` | Descripción del ejercicio y su objetivo. |
-| `diagram.png` | Imagen del diagrama para visualizarlo en GitHub. |
-| `diagram.drawio` | Archivo editable del diagrama. |
-| `script.sql` | Código SQL relacionado con el ejercicio. |
-| `statement.pdf` | Enunciado o documento de referencia. |
-
-Solo se incluirán los archivos disponibles para cada actividad.
+- **Draw.io:** elaboración y edición de diagramas.
+- **Git:** control de versiones.
+- **GitHub:** almacenamiento y documentación de los ejercicios.
+- **Markdown:** documentación del contenido del repositorio.
 
 ## 🎯 Objetivos
 
-- Mantener un registro organizado de los ejercicios realizados en clase.
-- Documentar los modelos y diagramas de bases de datos.
-- Conservar los scripts SQL y los archivos fuente editables.
-- Facilitar la revisión, el estudio y el seguimiento de las unidades.
-- Mantener un repositorio actualizado durante todo el semestre.
+- Organizar los ejercicios desarrollados en la asignatura.
+- Conservar los diagramas y archivos editables.
+- Facilitar la consulta y revisión de las actividades.
+- Documentar progresivamente los contenidos estudiados.
+- Mantener un registro académico de los trabajos realizados.
 
-## 📌 Convenciones
+## 📌 Notas
 
-- Utilizar nombres descriptivos y consistentes para los archivos.
-- Numerar los ejercicios según el orden de realización.
-- Mantener cada actividad dentro de su unidad correspondiente.
-- Incluir imágenes de los diagramas cuando sea posible.
-- Actualizar este README conforme se incorporen nuevos ejercicios.
+- El repositorio se actualizará conforme se desarrollen nuevas actividades.
+- Los archivos se mantendrán organizados según la estructura real del proyecto.
+- El contenido de las siguientes unidades se añadirá cuando corresponda.
 
 ---
 
 **Repositorio académico de Bases de Datos**
 
-*Documenting database models, diagrams and SQL exercises, one class at a time.*
+*Learning, modeling and documenting databases, one exercise at a time.*
