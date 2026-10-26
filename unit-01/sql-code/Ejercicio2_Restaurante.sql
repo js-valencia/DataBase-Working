@@ -1,6 +1,7 @@
--- Pedidos de restaurante
+-- Ejemplo 2: Pedidos de restaurante
+-- @author: js-valencia
 -- Compatible con MySQL / MariaDB / PostgreSQL
--- Cliente, Mesero, Categoría y Pedido no tienen atributos en el diagrama: solo se agrega su clave.
+-- Cliente, Mesero y Categoría no tienen atributos en el enunciado: solo se agrega su clave.
 
 CREATE TABLE cliente (
     id_cliente INT PRIMARY KEY
@@ -23,21 +24,23 @@ CREATE TABLE pedido (
     FOREIGN KEY (id_mesero)  REFERENCES mesero(id_mesero)
 );
 
--- Pedido (1) lleva Plato (1..N), tal como está en el diagrama;
--- Plato (1..N) puede estar en Categoría (1)
+-- Los platos se agrupan en categorías (Categoría 1, Plato 1..N)
 CREATE TABLE plato (
     id_plato     INT PRIMARY KEY,
     precio       DECIMAL(8,2) NOT NULL,
-    id_pedido    INT NOT NULL,
     id_categoria INT NOT NULL,
-    FOREIGN KEY (id_pedido)    REFERENCES pedido(id_pedido),
     FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria)
 );
 
--- Si tu docente lo quiere N:M (un plato en varios pedidos), quita id_pedido de plato y usa:
--- CREATE TABLE pedido_plato (
---     id_pedido INT NOT NULL, id_plato INT NOT NULL,
---     PRIMARY KEY (id_pedido, id_plato),
---     FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido),
---     FOREIGN KEY (id_plato)  REFERENCES plato(id_plato)
--- );
+-- Pedido (N:M) Plato: contiene.
+-- precio_unitario guarda el precio del plato al momento del pedido,
+-- así no cambia aunque luego se modifique plato.precio.
+CREATE TABLE detalle_pedido (
+    id_pedido       INT NOT NULL,
+    id_plato        INT NOT NULL,
+    cantidad        INT NOT NULL,
+    precio_unitario DECIMAL(8,2) NOT NULL,
+    PRIMARY KEY (id_pedido, id_plato),
+    FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido),
+    FOREIGN KEY (id_plato)  REFERENCES plato(id_plato)
+);

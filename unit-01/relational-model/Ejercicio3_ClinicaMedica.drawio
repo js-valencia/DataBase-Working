@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo relacional" id="ilERIFwBLf0W7ASv3iEF">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RkCzYbWpygg-LltLdv9o-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="Nombre: José Valencia&lt;div&gt;Ciclo: 3ro &quot;A&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="260" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Subrayado = clave primaria · Punteado = clave foránea · Flecha = apunta a la clave referenciada" vertex="1">
+          <mxGeometry height="20" width="620" x="460" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Especialidad(&lt;u&gt;id_especialidad&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="240" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Paciente(&lt;u&gt;id_paciente&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="550" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Medicamentos(&lt;u&gt;id_medicamento&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="820" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Medico(&lt;u&gt;id_medico&lt;/u&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_especialidad&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="60" width="252" x="240" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Cita(&lt;u&gt;id_cita&lt;/u&gt;, fecha, hora, consultorio, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_medico&lt;/span&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_paciente&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="60" width="443" x="240" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Receta(&lt;u&gt;id_receta&lt;/u&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_cita&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="251" y="752" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Receta_Medicamento(&lt;u&gt;id_receta&lt;/u&gt;, &lt;u&gt;id_medicamento&lt;/u&gt;, dosis, duracion)" vertex="1">
+          <mxGeometry height="60" width="437" x="240" y="884" as="geometry" />
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-10" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="RkCzYbWpygg-LltLdv9o-3">
+          <mxGeometry relative="1" x="0.2593" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="407" />
+              <mxPoint x="355" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-11" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="RkCzYbWpygg-LltLdv9o-6">
+          <mxGeometry relative="1" x="-0.113" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="570" />
+              <mxPoint x="330" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-12" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="RkCzYbWpygg-LltLdv9o-4">
+          <mxGeometry relative="1" x="-0.229" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="482" />
+              <mxPoint x="645" y="482" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-13" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="RkCzYbWpygg-LltLdv9o-7">
+          <mxGeometry relative="1" x="0.1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="707" />
+              <mxPoint x="300" y="707" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-14" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="RkCzYbWpygg-LltLdv9o-8">
+          <mxGeometry relative="1" x="-0.4758" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="839" />
+              <mxPoint x="366" y="839" />
+            </Array>
+            <mxPoint x="458.5" y="884" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkCzYbWpygg-LltLdv9o-15" edge="1" parent="1" source="RkCzYbWpygg-LltLdv9o-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;exitX=0.526;exitY=0.033;exitDx=0;exitDy=0;exitPerimeter=0;" target="RkCzYbWpygg-LltLdv9o-5">
+          <mxGeometry relative="1" x="0.1808" as="geometry">
+            <Array as="points">
+              <mxPoint x="469.9" y="820" />
+              <mxPoint x="935" y="820" />
+            </Array>
+            <mxPoint x="677" y="914" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

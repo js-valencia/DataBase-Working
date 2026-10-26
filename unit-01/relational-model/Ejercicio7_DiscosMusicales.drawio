@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo relacional" id="ilERIFwBLf0W7ASv3iEF">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="Nombre: José Valencia&lt;div&gt;Ciclo: 3ro &quot;A&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="317" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Subrayado = clave primaria · Punteado = clave foránea · Flecha = apunta a la clave referenciada" vertex="1">
+          <mxGeometry height="20" width="620" x="517" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Genero_Musical(&lt;u&gt;id_genero&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="297" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Cantante(&lt;u&gt;ci,&lt;/u&gt;&amp;nbsp;nombre, pais)" vertex="1">
+          <mxGeometry height="42" width="230" x="620" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Cancion(&lt;u&gt;id_cancion&lt;/u&gt;, titulo)" vertex="1">
+          <mxGeometry height="42" width="230" x="900" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Disco(&lt;u&gt;id_disco&lt;/u&gt;, titulo, precio, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_genero&lt;/span&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;nombre_cantante&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="60" width="417" x="297" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Contiene(&lt;u&gt;id_disco&lt;/u&gt;, &lt;u&gt;id_cancion&lt;/u&gt;, posicion)" vertex="1">
+          <mxGeometry height="42" width="292" x="280" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-39" edge="1" parent="1" source="P7bAo_8FCLxUUzWUCeUP-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="P7bAo_8FCLxUUzWUCeUP-34">
+          <mxGeometry relative="1" x="0.02" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="435" />
+              <mxPoint x="430" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-40" edge="1" parent="1" source="P7bAo_8FCLxUUzWUCeUP-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="P7bAo_8FCLxUUzWUCeUP-35">
+          <mxGeometry relative="1" x="-0.2928" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="435" />
+              <mxPoint x="702" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-41" edge="1" parent="1" source="P7bAo_8FCLxUUzWUCeUP-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="P7bAo_8FCLxUUzWUCeUP-37">
+          <mxGeometry relative="1" x="0.2444" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="610" />
+              <mxPoint x="360" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P7bAo_8FCLxUUzWUCeUP-42" edge="1" parent="1" source="P7bAo_8FCLxUUzWUCeUP-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="P7bAo_8FCLxUUzWUCeUP-36">
+          <mxGeometry relative="1" x="0.0292" as="geometry">
+            <Array as="points">
+              <mxPoint x="426" y="700" />
+              <mxPoint x="990" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

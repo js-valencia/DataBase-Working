@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo relacional" id="ilERIFwBLf0W7ASv3iEF">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="Nombre: José Valencia&lt;div&gt;Ciclo: 3ro &quot;A&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="531" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Subrayado = clave primaria · Punteado = clave foránea · Flecha = apunta a la clave referenciada" vertex="1">
+          <mxGeometry height="20" width="620" x="731" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Cliente(&lt;u&gt;id_cliente&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="515" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Mesero(&lt;u&gt;id_mesero&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="501" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Categoria(&lt;u&gt;id_categoria&lt;/u&gt;)" vertex="1">
+          <mxGeometry height="42" width="230" x="1036" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Pedido(&lt;u&gt;id_pedido&lt;/u&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_cliente&lt;/span&gt;, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_mesero&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="42" width="292" x="470" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Plato(&lt;u&gt;id_plato&lt;/u&gt;, precio, &lt;span style=&quot;text-decoration: underline dotted;&quot;&gt;id_categoria&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="60" width="272" x="1015" y="816" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" value="Detalle_Pedido(&lt;u&gt;id_pedido&lt;/u&gt;, &lt;u&gt;id_plato&lt;/u&gt;, cantidad, precio_unitario)" vertex="1">
+          <mxGeometry height="60" width="437" x="501" y="936" as="geometry" />
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-9" edge="1" parent="1" source="Fp0SQly8FUdXxIX-vCCG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="Fp0SQly8FUdXxIX-vCCG-3">
+          <mxGeometry relative="1" x="0.1089" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="577" />
+              <mxPoint x="585" y="577" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-10" edge="1" parent="1" source="Fp0SQly8FUdXxIX-vCCG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;exitX=0.683;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.405;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" target="Fp0SQly8FUdXxIX-vCCG-4">
+          <mxGeometry relative="1" x="-0.1832" as="geometry">
+            <Array as="points">
+              <mxPoint x="669.4" y="736" />
+              <mxPoint x="594.2" y="736" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-11" edge="1" parent="1" source="Fp0SQly8FUdXxIX-vCCG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;" target="Fp0SQly8FUdXxIX-vCCG-5">
+          <mxGeometry relative="1" x="-0.3125" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="772" />
+              <mxPoint x="1135" y="772" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-12" edge="1" parent="1" source="Fp0SQly8FUdXxIX-vCCG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;exitX=0.28;exitY=0.046;exitDx=0;exitDy=0;exitPerimeter=0;" target="Fp0SQly8FUdXxIX-vCCG-6">
+          <mxGeometry relative="1" x="0.2864" as="geometry">
+            <Array as="points">
+              <mxPoint x="623.4" y="936.2" />
+              <mxPoint x="625" y="936.2" />
+              <mxPoint x="625" y="906" />
+              <mxPoint x="475" y="906" />
+              <mxPoint x="475" y="686" />
+              <mxPoint x="535" y="686" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fp0SQly8FUdXxIX-vCCG-13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;exitX=0.387;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" x="0.0017" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="936" />
+              <mxPoint x="675" y="906" />
+              <mxPoint x="1085.9" y="906" />
+            </Array>
+            <mxPoint x="605.0190000000001" y="936.0000000000001" as="sourcePoint" />
+            <mxPoint x="1085.8999999999996" y="875.82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
