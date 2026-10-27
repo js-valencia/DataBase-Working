@@ -1,4 +1,5 @@
 -- Ejercicio 5: Empresa Discográfica
+-- @author: js-valencia
 -- Compatible con MySQL / MariaDB / PostgreSQL
 
 CREATE TABLE manager (

@@ -1,4 +1,5 @@
 -- Ejercicio 6: Tienda Informática
+-- @author: js-valencia
 -- Compatible con MySQL / MariaDB / PostgreSQL
 
 CREATE TABLE producto (

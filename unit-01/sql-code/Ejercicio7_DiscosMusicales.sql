@@ -1,4 +1,5 @@
 -- Ejercicio 7: Discos Musicales
+-- @author: js-valencia
 -- Compatible con MySQL / MariaDB / PostgreSQL
 
 -- El enunciado solo indica identificador; puedes agregar un campo nombre si lo necesitas.
